@@ -12,7 +12,7 @@
 
     <groupId>ru.advantum.commons</groupId>
     <artifactId>advantum-commons-cache</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -42,8 +42,9 @@
     </dependencies>
     <distributionManagement>
         <repository>
-            <id>advantum</id>
-            <url>https://nexus.advantum.ru/content/repositories/adv-internal</url>
+            <id>github</id>
+            <name>GitHub PL99 Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/pl99/advantum-commons-cache</url>
         </repository>
         <snapshotRepository>
             <id>advantum</id>
@@ -69,6 +70,10 @@
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
+        </repository>
+        <repository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com</url>
         </repository>
     </repositories>
 

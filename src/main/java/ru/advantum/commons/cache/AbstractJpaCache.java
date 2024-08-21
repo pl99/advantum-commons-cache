@@ -41,7 +41,7 @@ public abstract class AbstractJpaCache<T, ID, R extends JpaRepository<T, ID>> im
      * PT15s - 15 секунд
      */
     protected abstract String getExpression();
-    protected abstract ScheduleType geScheduleType();
+    protected abstract ScheduleType getScheduleType();
 
     @Override
     @EventListener(ApplicationReadyEvent.class)
